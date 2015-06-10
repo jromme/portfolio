@@ -1,0 +1,66 @@
+@keyframes slideInL {
+	from {
+		opacity: 0;
+		margin-left: -5vw;
+ 	}
+
+  	to {
+  		opacity: 1;
+  		margin-left: 20vw;
+	}
+}
+
+@keyframes slideInR {
+	from {
+		opacity: 0;
+		margin-right: -5vw;
+ 	}
+
+  	to {
+  		opacity: 1;
+  		margin-right: 20vw;
+	}
+}
+
+section .unicorn {
+
+	img {
+		margin-top: 1vh;
+	}
+
+	//h1 is 9vh dus bijft van de 95vh nog 86vh over
+	.unicorn-inner {
+		height: 86vh;
+		width: 100vw;
+	}
+
+	.infoSides {
+		width: 37vw;
+		height: 100%;
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+
+		.spanWrapper span {
+			display: block;
+			margin-top: 8vh;
+		}
+	}
+
+	.left span {
+		margin-left: 20vw;
+		animation: slideInL 2s;
+	}
+
+	.right span {
+		text-align: right;
+		margin-right: 20vw;
+		animation: slideInR 2s;
+	}
+
+	.infoCenter {
+		width: 25vw;
+		height: 100%;
+		display: inline-block;
+	}
+}

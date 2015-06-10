@@ -1,48 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
 
-        <!-- build:css({app,.tmp}) /css/main.css -->
-        <!-- Syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  {% include head.html %}
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-        <!-- endbuild -->
+  <body>
 
-    </head>
-    <body>
+    <div class="page-content">
+      <div class="wrapper">
+        
+        {% include header.html %}
+        <section class="snap" id="welcome">{% include welcome.html %}</section>
+        <section class="snap" id="hobbies">{% include hobbies.html %}</section>
+        <section class="snap" id="unicorn">{% include unicorn.html %}</section>
+        <section class="snap" id="portfolio">{% include portfolio.html %}</section>
+        <section class="snap">{{ content }}</section>
+      </div>
+    </div>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+    {% include footer.html %}
+    {% include scripts.html %}
 
-          {{ content }}
+  </body>
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Jromm<br />
-                <a href="mailto:jeromebraeken@gmail.com">jeromebraeken@gmail.com</a>
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
-
-    <!-- build:js(app) /js/scripts.js -->
-    <script src="/js/main.js"></script>
-    <!-- endbuild -->
-    </body>
 </html>
