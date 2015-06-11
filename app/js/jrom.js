@@ -22,9 +22,7 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     // alert("Hello");
     $("section .unicorn .left span").addClass("animateLeft");
-    $("section .unicorn .left").removeClass("spanWrapper");
     $("section .unicorn .right span").addClass("animateRight");
-    $("section .unicorn .right").removeClass("spanWrapper");
     this.destroy()
   },
   offset: '75%'
