@@ -1,4 +1,59 @@
-body {
-	background: red;
-	box-sizing: border-box;
+@charset "utf-8";
+
+
+
+// Our variables
+@font-face { font-family: perfograma; src: url('fonts/Perfograma.otf'); }
+@font-face { font-family: manifesto; src: url('fonts/MANIFESTO.ttf'); }
+@font-face { font-family: aleoLight; src: url('fonts/Aleo-Light.otf'); }
+@font-face { font-family: aleoRegular; src: url('fonts/Aleo-Regular.otf'); }
+
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #EBEADD;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
+
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "portfolio",
+        "projects",
+        "unicorn",
+        "welcome",
+        "hobbies",
+        "section",
+        "header"
+;
