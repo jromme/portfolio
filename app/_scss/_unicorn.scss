@@ -1,10 +1,10 @@
 @keyframes slideInL {
-	from {
+	0% {
 		opacity: 0;
 		margin-left: -5vw;
  	}
 
-  	to {
+  	100% {
   		opacity: 1;
   		margin-left: 20vw;
 	}
@@ -41,21 +41,14 @@ section .unicorn {
 		position: relative;
 		vertical-align: top;
 
-		.spanWrapper span {
+		.wrapperInvisible {
+			visibility: hidden;
+		}
+
+		span {
 			display: block;
 			margin-top: 8vh;
 		}
-	}
-
-	.left span {
-		margin-left: 20vw;
-		animation: slideInL 2s;
-	}
-
-	.right span {
-		text-align: right;
-		margin-right: 20vw;
-		animation: slideInR 2s;
 	}
 
 	.infoCenter {
@@ -64,3 +57,22 @@ section .unicorn {
 		display: inline-block;
 	}
 }
+
+.animateLeft {
+	animation: slideInL 1.4s;
+	animation-timing-function: ease-in-out;
+	margin-left: 20vw;
+	visibility: visible;
+}
+
+.animateRight {
+	text-align: right;
+	animation: slideInR 2s;
+	margin-right: 20vw;
+	visibility: visible;
+}
+
+
+
+
+
