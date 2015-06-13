@@ -28,12 +28,6 @@ section .unicorn {
 		margin-top: 1vh;
 	}
 
-	//h1 is 9vh dus bijft van de 95vh nog 86vh over
-	.unicorn-inner {
-		height: 86vh;
-		width: 100vw;
-	}
-
 	.infoSides {
 		width: 37vw;
 		height: 100%;
@@ -41,8 +35,7 @@ section .unicorn {
 		position: relative;
 		vertical-align: top;
 
-		.spanWrapper {
-			
+		.spanWrapper {	
 		}
 
 		span {

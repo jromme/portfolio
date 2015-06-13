@@ -1,5 +1,40 @@
 section .hobbies {
+
 	img {
 		margin-top: 40vh;
+	}
+
+	span{
+		position: absolute;
+		//volleyball
+		&:nth-child(3){
+			top: 25vh;
+			right: 15vw;
+		}
+		//got
+		&:nth-child(4){
+			top: 30vh;
+			left: 15vw; 
+		}
+		//gameing with friends
+		&:nth-child(5){
+			bottom: 15vh;
+			left: 20vw;
+		}
+		//grilling
+		&:nth-child(6){
+			top: 38vh;
+			right: 30vw;
+		}
+		//creating AWESOME SHIT
+		&:nth-child(7){
+			bottom: 17vh;
+			right: 15vw;
+		}
+		//whisky
+		&:nth-child(8){
+			top: 45vh;
+			left: 25vw;
+		}
 	}
 }

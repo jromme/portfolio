@@ -22,4 +22,10 @@ section {
 	p {
 		font-family: aleoRegular;
 	}
+	//h1 is 9vh dus bijft van de 95vh nog 86vh over
+	.inner {
+		height: 86vh;
+		width: 100vw;
+		position: relative;
+	}
 }
