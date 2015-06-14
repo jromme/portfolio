@@ -1,5 +1,4 @@
 
-
 //making waypoints
 
 var waypoint = new Waypoint({
@@ -28,3 +27,5 @@ var waypoint = new Waypoint({
     this.destroy()
   }
 });
+
+//fader 

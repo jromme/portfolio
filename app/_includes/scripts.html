@@ -11,5 +11,13 @@ $(document).ready(function() {
         snaps: '.snap',
         proximity: 100
     });
+
+	var divs = $('#welcome');
+	$(window).bind('scroll', function() {
+	   var st = $(this).scrollTop();
+	   divs.css({ 'opacity' : (1 - st/550) });
+	});
 });
+
+
 </script>
