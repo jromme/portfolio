@@ -29,12 +29,18 @@
 
 	.spanWrapper {
 		width: 60%;
+		height: 100%;
+	}
+
+	.wrap {
+		height: 40%;
 	}
 
 	h1 {
 		font-family: adelle;
 		font-size: $base-font-size * 3;
 		line-height: $base-line-height * .75;
+		cursor: pointer;
 	}
 
 	p {
