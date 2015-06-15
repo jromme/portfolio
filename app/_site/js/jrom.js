@@ -27,13 +27,3 @@ var waypoint = new Waypoint({
     this.destroy()
   }
 });
-
-//fader 
-<script>
-  $(function(){
-      $(".element").typed({
-        strings: ["First sentence.", "Second sentence."],
-        typeSpeed: 0
-      });
-  });
-</script>

@@ -7,54 +7,61 @@
 <script src="./js/typed.js"></script>
 <script src="./js/jrom.js"></script>
 <script type="text/javascript">
+
 $(document).ready(function() {
+
+  //snapp
     $(document).scrollsnap({
         snaps: '.snap',
         proximity: 100
     });
 
-	$(window).on('scroll', function () {
-	    $('.wrapper').each(function (index, item) {
-	        $(item).children().each(function (indexChild, child) {
-	            var st = $(window).scrollTop();
-	            st = $(window).scrollTop() - $(child).offset().top + 10;
-	            $(child).css({ 'opacity' : (1 - st/550) });
-	        });
 
-	    });
-	});
+  //fader
+  $(window).on('scroll', function () {
+      $('.wrapper').each(function (index, item) {
+          $(item).children().each(function (indexChild, child) {
+              var st = $(window).scrollTop();
+              st = $(window).scrollTop() - $(child).offset().top + 10;
+              $(child).css({ 'opacity' : (1 - st/550) });
+          });
 
-	$('.intro .left span:nth-child(1) h1').on('click', function(){
+      });
+  });
+
+  //typed
+  $('.intro .left span:nth-child(1) h1').on('click', function(){
       $(".intro .left span:nth-child(1) p").typed({
         strings: ["is Jerome Braeken, born in 1991. What will happen next when I add a line."],
-        typeSpeed: 0
+        typeSpeed: 0,
+        showCursor: false
       });
-  	});
+    });
 
-  	$('.intro .left span:nth-child(2) h1').on('click',function(){
+    $('.intro .left span:nth-child(2) h1').on('click',function(){
       $(".intro .left span:nth-child(2) p").typed({
         strings: ["raised in Maastricht. A city close to both Belgium and Germany."],
-        typeSpeed: 0
+        typeSpeed: 0,
+        showCursor: false
       });
-  	});
+    });
 
-  	$('.intro .right span:nth-child(1) h1').on('click', function(){
+    $('.intro .right span:nth-child(1) h1').on('click', function(){
       $(".intro .right span:nth-child(1) p").typed({
         strings: ["what I do? Creating things is like a drug to me. It's even worse when people like it."],
-        typeSpeed: 0
+        typeSpeed: 0,
+        showCursor: false
       });
-  	});
+    });
 
-  	$('.intro .right span:nth-child(2) h1').on('click', function(){
+    $('.intro .right span:nth-child(2) h1').on('click', function(){
       $(".intro .right span:nth-child(2) p").typed({
         strings: ["am studying CMD at Zuyd Hogeschool in Maastricht. Looking for a half year internship, starting from September."],
-        typeSpeed: 0
+        typeSpeed: 0,
+        showCursor: false
       });
-  	});
+    });
 
 });
-
-
-
 
 </script>
