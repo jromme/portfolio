@@ -1,5 +1,6 @@
 
 .intro {
+	
 	img {
 		margin-bottom: 5vh;
 	}
@@ -33,8 +34,10 @@
 
 	p {
 		margin: 20vh 0;
+		font-size: $base-font-size * 1.2;
 
 		&:first-line {
+			font-family: adelle;
 			font-size: $base-font-size * 3;
 			line-height: $base-line-height * .75;
 		}

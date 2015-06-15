@@ -13,12 +13,20 @@ $(document).ready(function() {
         proximity: 100
     });
 
-	var divs = $('#welcome');
-	$(window).bind('scroll', function() {
-	   var st = $(this).scrollTop();
-	   divs.css({ 'opacity' : (1 - st/550) });
+	$(window).on('scroll', function () {
+	    $('.wrapper').each(function (index, item) {
+	        $(item).children().each(function (indexChild, child) {
+	            var st = $(window).scrollTop();
+	            st = $(window).scrollTop() - $(child).offset().top + 10;
+	            $(child).css({ 'opacity' : (1 - st/550) });
+	        });
+
+	    });
 	});
+
 });
+
+
 
 
 </script>
