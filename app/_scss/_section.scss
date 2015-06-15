@@ -1,12 +1,16 @@
 section {
 	height: 95vh;
 	// border: solid black 1px;
-	h1{
-		font-family: perfograma;
-    	text-align: center;
-    	font-size: $base-font-size * 3;
-    	text-align: center;
-    	height: 9vh;
+	.sectionHeader{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    	height: 15vh;
+		h1 {
+			font-family: ralewayThin;
+    		text-align: center;
+    		font-size: $base-font-size * 3;
+		}
 	}
 	img {
 		margin-top: 5vh;
@@ -24,7 +28,7 @@ section {
 	}
 	//h1 is 9vh dus bijft van de 95vh nog 86vh over
 	.inner {
-		height: 86vh;
+		height: 80vh;
 		width: 100vw;
 		position: relative;
 	}

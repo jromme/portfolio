@@ -29,3 +29,11 @@ var waypoint = new Waypoint({
 });
 
 //fader 
+<script>
+  $(function(){
+      $(".element").typed({
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 0
+      });
+  });
+</script>
