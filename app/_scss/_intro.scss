@@ -1,6 +1,5 @@
 
 .intro {
-	
 	img {
 		margin-bottom: 5vh;
 	}
@@ -32,14 +31,21 @@
 		width: 60%;
 	}
 
-	p {
-		margin: 20vh 0;
-		font-size: $base-font-size * 1.2;
+	.typed-cursor {
+		display: none;
+	}
 
-		&:first-line {
-			font-family: adelle;
-			font-size: $base-font-size * 3;
-			line-height: $base-line-height * .75;
-		}
+	h1 {
+		font-family: adelle;
+		font-size: $base-font-size * 3;
+		line-height: $base-line-height * .75;
+	}
+
+	p {
+		margin-left: .2vw;
+		font-size: $base-font-size * 1.2;
+		font-family: "brandon-grotesque",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 	}
 }
