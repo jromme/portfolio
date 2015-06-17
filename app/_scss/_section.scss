@@ -1,6 +1,10 @@
 section {
 	height: 95vh;
 	// border: solid black 1px;
+	:nth-child(2n){
+		background-color: darken($background-color, 5);
+	}
+	
 	.sectionHeader{
 		display: flex;
 		align-items: center;
