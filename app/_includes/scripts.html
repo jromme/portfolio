@@ -11,15 +11,20 @@
 $(document).ready(function() {
 
   //snapp
-    $(document).scrollsnap({
-        snaps: '.snap',
-        proximity: 100
-    });
+  $(document).scrollsnap({
+      snaps: '.snap',
+      proximity: 400
+  });
 
+  $(document).scrollsnap({
+      direction: 'x',
+      snaps: 'section',
+      proximity: 1000
+  });
 
   //fader
   $(window).on('scroll', function () {
-      $('.wrapper').each(function (index, item) {
+      $('.section-wrapper').each(function (index, item) {
           $(item).children().each(function (indexChild, child) {
               var st = $(window).scrollTop();
               st = $(window).scrollTop() - $(child).offset().top + 10;

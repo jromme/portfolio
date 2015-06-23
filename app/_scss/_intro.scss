@@ -8,6 +8,19 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		h1 {
+			cursor: pointer;
+			transition: all .2s ease-in-out;
+			&:hover {
+				position: relative;
+				text-shadow: 
+					#c5bfb7 1px 1px,
+					#c5bfb7 2px 2px,
+					#c5bfb7 3px 3px;
+				top: -2px;
+				left: -2px;
+			}
+		}
 	}
 	.infoSides {
 		width: 37vw;
@@ -37,10 +50,9 @@
 	}
 
 	h1 {
-		font-family: adelle;
+		font-family: le-monde-courrier-std-2;
 		font-size: $base-font-size * 3;
 		line-height: $base-line-height * .75;
-		cursor: pointer;
 	}
 
 	p {

@@ -1,0 +1,46 @@
+nav {
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	text-align: center;
+
+	ul {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	li {
+		position: relative;
+		padding: 0 2.5%;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a {
+				// position: absolute;
+				position: relative;	
+				font-family: aleoRegular;
+				transition-property: transform, text-shadow;
+				transition-duration: .2s;
+				transition-timing-function: linear;				
+				text-decoration: none;
+				font-size: $base-font-size * 2;
+				color: white;
+			&:hover {
+				text-shadow: 
+					#464441 1px 1px,
+					#464441 2px 2px,
+					#464441 3px 3px;
+				transform: translate3d(-3px, -3px, 0);
+				text-decoration: none;
+				color: #f1eae0;
+			}
+			&:visited {
+				color: white;
+			}
+		}
+	}
+}

@@ -4,19 +4,14 @@
   {% include head.html %}
 
   <body>
-
-    <div class="page-content">
-      <div class="wrapper">
-        
-        <!-- {% include header.html %} -->
-        <section id="welcome">{% include welcome.html %}</section>
-        <section class="snap" id="intro">{% include intro.html %}</section>
-        <section class="snap" id="hobbies">{% include hobbies.html %}</section>
-        <section class="snap" id="unicorn">{% include unicorn.html %}</section>
-        <section class="snap" id="projets">{% include projects.html %}</section>
-      </div>
+    <body onload=' location.href="#home" '>
+    <div class="page-container">
+      {% include posts.html %}
+      {% include home.html %}
+      {% include works.html %}  
     </div>
-
+    
+    {% include nav.html %}
     {% include footer.html %}
     {% include scripts.html %}
 

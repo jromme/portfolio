@@ -10,6 +10,10 @@ dl, dd, ol, ul, figure {
 
 $background-color: #f1eae0;
 
+* {
+    box-sizing: border-box;
+}
+
 /**
  * Basic styling
  */
@@ -30,9 +34,33 @@ body {
     background-size: 10vw;
 }
 
-.wrapper .welcome .third {
-    width: calc(100vw/4);
-    display: inline-block;
+.page-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    // overflow: hidden;
+}
+
+section {
+    display: block;
+    position: absolute;
+    top: 0px;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+//sections
+#posts {
+    left: 0;
+}
+
+#home {
+    left: 100%;
+}
+
+#works {
+    left: 200%;
 }
 
 /**
@@ -71,13 +99,9 @@ figcaption {
 }
 
 
-
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
-}
 
 li {
     > ul,
@@ -101,16 +125,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $background-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $background-color;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $background-color;
+        text-decoration: none;
     }
 }
 
