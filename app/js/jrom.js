@@ -1,4 +1,4 @@
-
+'use strict';
 
 //making waypoints
 var waypoint = new Waypoint({
