@@ -6,9 +6,26 @@
 <script src="./js/jquery.scrollsnap.js"></script>
 <script src="./js/typed.js"></script>
 <script src="./js/jrom.js"></script>
+<script type="text/javascript" src="./js/jquery.fullPage.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function() {
+
+  $('#fullpage').fullpage({
+      afterRender: function(){
+          var pluginContainer = $(this);
+            $(window).on('scroll', function () {
+              $('.section-wrapper').each(function (index, item) {
+                  $(item).children().each(function (indexChild, child) {
+                      var st = $(window).scrollTop();
+                      st = $(window).scrollTop() - $(child).offset().top + 10;
+                      $(child).css({ 'opacity' : (1 - st/550) });
+                  });
+
+              });
+        });
+      }
+  });
 
   //snapp
   $(document).scrollsnap({
@@ -23,16 +40,7 @@ $(document).ready(function() {
   });
 
   //fader
-  $(window).on('scroll', function () {
-      $('.section-wrapper').each(function (index, item) {
-          $(item).children().each(function (indexChild, child) {
-              var st = $(window).scrollTop();
-              st = $(window).scrollTop() - $(child).offset().top + 10;
-              $(child).css({ 'opacity' : (1 - st/550) });
-          });
 
-      });
-  });
 
   //typed
   $('.intro .left .wrap:nth-child(1) h1').on('click', function(){
