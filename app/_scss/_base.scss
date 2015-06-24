@@ -17,6 +17,16 @@ $background-color: #f1eae0;
 /**
  * Basic styling
  */
+html {
+  margin:0;
+  border:0;   
+  height:100%;
+  width:100%;
+  min-width:320px;
+  background:#fff;
+  overflow: hidden;
+}
+
 body {
     height: 100%;
     width: 100%;
