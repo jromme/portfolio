@@ -1,5 +1,6 @@
 <!-- build:js(app) ./js/scripts.js -->
 <script src="{{site.baseurl}}_bower_components/jquery/dist/jquery.js"></script>
+<script src="{{site.baseurl}}_bower_components/panelsnap/jquery.panelSnap.js"></script>
 <script src="./js/noframework.waypoints.min.js"></script>
 <script src="./js/jquery.easing.min.js"></script>
 <script src="./js/jquery.scrollstop.js"></script>
@@ -10,6 +11,11 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
+
+  var options = { panelSelector: '> section'}
+
+  $('.panel_container').panelSnap(options);
+
   //snapp
   $(document).scrollsnap({
       snaps: '.snap',
