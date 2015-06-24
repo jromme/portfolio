@@ -2,6 +2,5 @@
   "name": "site",
   "version": "0.0.0",
   "dependencies": {
-    "fullpage.js": "~2.6.6"
   }
 }

@@ -1,6 +1,5 @@
 <!-- build:js(app) ./js/scripts.js -->
 <script src="{{site.baseurl}}_bower_components/jquery/dist/jquery.js"></script>
-<script src="{{site.baseurl}}_bower_components/fullpage.js/jquery.fullPage.js"></script>
 <script src="./js/noframework.waypoints.min.js"></script>
 <script src="./js/jquery.easing.min.js"></script>
 <script src="./js/jquery.scrollstop.js"></script>
@@ -8,12 +7,9 @@
 <script src="./js/typed.js"></script>
 <script src="./js/jrom.js"></script>
 <!-- endbuild -->
-
 <script type="text/javascript">
 
 $(document).ready(function() {
-  $('#fullpage').fullpage();
-
   //snapp
   $(document).scrollsnap({
       snaps: '.snap',
@@ -70,7 +66,6 @@ $(document).ready(function() {
         showCursor: false
       });
     });
-
 });
 
 </script>
