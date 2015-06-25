@@ -1,9 +1,11 @@
-.section-wrapper {
-	position: absolute;
-	width:100%;
-	height:auto;
-	min-height:100%;
-	overflow: scroll;
+section {
+  position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	background: #1abc9c;
+	display: inline-block;
+	overflow-y: scroll;
 	
 	.sectionHeader{
 		display: flex;

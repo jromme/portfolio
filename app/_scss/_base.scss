@@ -45,42 +45,7 @@ body {
     font-size: 0;
 }
 
-#page-container {
-    position: relative;
-    height:100%;
-    width:100%;
-}
-
-.view {
-    display:block;
-    position:absolute;
-    top:0px;
-    margin-top:0px;
-    width:100%;
-    min-height:100%;
-    overflow-y: scroll;
-
-    // active: takes height of largest .view, this means empty space at the smaller .view's (panelsnap: NOT WORKING)
-    //overflow-y: auto; 
-
-    //active: independent scroll (panelsnap: NOT WORKING) for some reason UNICORN is snapping!!!
-    overflow-x: hidden; 
-
-    // Both not active: snap works
-}
-
 //sections
-
-
-section {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    background: #1abc9c;
-    display: inline-block;
-    overflow-y: scroll;
-}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
