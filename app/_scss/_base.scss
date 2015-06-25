@@ -23,6 +23,7 @@ html {
   height:100%;
   width:100%;
   min-width:320px;
+  overflow-y: hidden;
 }
 
 body {
@@ -40,6 +41,7 @@ body {
     background-position: 50% 40%;
     background-attachment: fixed;
     background-size: 10vw;
+    overflow-y: hidden;
 }
 
 #page-container {
@@ -55,6 +57,7 @@ body {
     margin-top:0px;
     width:100%;
     min-height:100%;
+    overflow-y: scroll;
 
     // active: takes height of largest .view, this means empty space at the smaller .view's (panelsnap: NOT WORKING)
     //overflow-y: auto; 
@@ -76,6 +79,14 @@ body {
 
 #works {
     left: 200%;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #1abc9c;
 }
 
 /**
