@@ -5,12 +5,12 @@
 
   <body onload=' location.href="#home" '>
 
-    <section id="posts" class="snap">{% include posts.html %}</section>
-    <section id="home" class="snap">{% include home.html %}</section>
-    <section id="works" class="snap">{% include works.html %}</section> 
+    <div id="posts" class="view snap">{% include posts.html %}</div>
+    <div id="home" class="view snap">{% include home.html %}</div>
+    <div id="works" class="view snap">{% include works.html %}</div> 
     
     <nav>{% include nav.html %}</nav>
-    {% include footer.html %}
+<!--     {% include footer.html %} -->
     {% include scripts.html %}
 
   </body>

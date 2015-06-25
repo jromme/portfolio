@@ -14,19 +14,19 @@ $(document).ready(function() {
 
   var options = { panelSelector: '> section'}
 
-  $('.panel_container').panelSnap(options);
+  $('body').panelSnap(options);
 
-  // //snapp
-  // $(document).scrollsnap({
-  //     snaps: '.snap',
-  //     proximity: 400
-  // });
+  //snapp
+  $(document).scrollsnap({
+      snaps: '.snap',
+      proximity: 400
+  });
 
-  // $(document).scrollsnap({
-  //     direction: 'x',
-  //     snaps: 'section',
-  //     proximity: 1000
-  // });
+  $(document).scrollsnap({
+      direction: 'x',
+      snaps: 'section',
+      proximity: 1000
+  });
 
   //fader
   $(window).on('scroll', function () {
