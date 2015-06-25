@@ -3,15 +3,13 @@
 
   {% include head.html %}
 
-  <body>
-    <body onload=' location.href="#home" '>
-    <div id="page-container">
-      {% include posts.html %}
-      {% include home.html %}
-      {% include works.html %}  
-    </div>
+  <body onload=' location.href="#home" '>
+
+    <section id="posts" class="snap">{% include posts.html %}</section>
+    <section id="home" class="snap">{% include home.html %}</section>
+    <section id="works" class="snap">{% include works.html %}</section> 
     
-    {% include nav.html %}
+    <nav>{% include nav.html %}</nav>
     {% include footer.html %}
     {% include scripts.html %}
 
