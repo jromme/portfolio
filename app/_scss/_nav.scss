@@ -3,7 +3,11 @@ nav {
 	bottom: 0px;
 	left: 0;
 	right: 0;
+	height: 10vh;
 	text-align: center;
+  display: flex;
+	align-items: center;
+	justify-content: center;
 
 	ul {
 		margin: 0;

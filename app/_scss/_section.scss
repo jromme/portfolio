@@ -2,9 +2,8 @@
 .panels {
 	position: absolute;
 	overflow: scroll;
-	border: 1px solid black;
-	width: 50vw;
-	height: 50vh;
+	width: 100vw;
+	height: 90vh;
 }
 
 section {
@@ -12,25 +11,46 @@ section {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: #1abc9c;
-  padding: 50px;
-  border: 1px dotted black;
 
 	.sectionHeader{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-    	height: 15%;
+    height: 10vh;
 		h1 {
 			font-family: brandon-grotesque;
 			font-weight: 100;
-    		text-align: center;
-    		font-size: $base-font-size * 3;
+    	text-align: center;
 		}
 	}
+	
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.infoSides {
+		width: 37%;
+		height: 100%;
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.infoCenter {
+		height: 100%;
+		align-items: flex-end; 
+		display: flex; 
+		justify-content: center; 
+	}
+
 	img {
 		margin-top: 5%;
-		width: 15%;
+		width: 10vw;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -44,7 +64,7 @@ section {
 	}
 	//h1 is 9vh dus bijft van de 95vh nog 86vh over
 	.inner {
-		height: 80%;
+		height: 70%;
 		width: 100%;
 		position: relative;
 	}
