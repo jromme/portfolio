@@ -12,9 +12,19 @@
 
 $(document).ready(function() {
 
-  var options = { panelSelector: '> section'}
 
-  $('.view .panels').panelSnap(options);
+  $('#posts .panels').panelSnap();
+
+  $('#home .panels').panelSnap();
+
+  $('#works .panels').panelSnap();
+
+  // if ($('#home .panels #unicorn').hasClass('active')){
+  //   $('#home .panels #unicorn').css('background-color', 'red')
+  // };
+
+//   var welcome = document.getElementById('#welcome');
+//   if (unicorn.className.indexOf('active') > -1) { console.log('works') };
 
   //snapp
   $(document).scrollsnap({
@@ -26,18 +36,6 @@ $(document).ready(function() {
       direction: 'x',
       snaps: 'section',
       proximity: 1000
-  });
-
-  //fader
-  $(window).on('scroll', function () {
-      $('.section-wrapper').each(function (index, item) {
-          $(item).children().each(function (indexChild, child) {
-              var st = $(window).scrollTop();
-              st = $(window).scrollTop() - $(child).offset().top + 10;
-              $(child).css({ 'opacity' : (1 - st/550) });
-          });
-
-      });
   });
 
   //typed

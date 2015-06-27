@@ -22,30 +22,14 @@
 	}
 }
 
-.section-wrapper .unicorn {
+.unicorn {
 
 	img {
 		margin-top: -5%;
 	}
 
-	.inner {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
 	.infoSides {
-		width: 37%;
-		height: 100%;
-		display: inline-block;
-		position: relative;
-		vertical-align: top;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 
-		.spanWrapper {
-		}
 
 		span {
 			display: block;
@@ -71,28 +55,34 @@
 			}
 		}
 	}
+}
 
-	.infoCenter {
-		width: 25%;
-		height: 100%;
-		display: inline-block;
+//start animation when active
+
+#unicorn.active {
+
+	.unicorn .left {
+		background-color: red;
+		// .animateLeft {
+		// 	animation: slideInL 1.4s;
+		// 	animation-fill-mode: forwards;
+		// 	animation-timing-function: ease-in-out;
+		// 	margin-left: 20%;
+		// }
 	}
+
+	.unicorn .right span {
+		.animateRight {
+			text-align: right;
+			animation: slideInR 1.4s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in-out;
+			margin-right: 20%;
+		}
+	}
+
 }
 
-.animateLeft {
-	animation: slideInL 1.4s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in-out;
-	margin-left: 20%;
-}
-
-.animateRight {
-	text-align: right;
-	animation: slideInR 1.4s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in-out;
-	margin-right: 20%;
-}
 
 
 
