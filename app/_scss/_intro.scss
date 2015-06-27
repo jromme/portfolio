@@ -1,6 +1,28 @@
 
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 .intro {
 	height: 100%;
+
+	.cursor:after {
+    content: '|';
+    opacity: 1;
+    animation: blink 0.7s infinite;
+	}
 
 	img {
 		margin-bottom: 5vh;
@@ -9,6 +31,7 @@
 	.inner h1 {
 		cursor: pointer;
 		transition: all .2s ease-in-out;
+		position: relative;
 		&:hover {
 			position: relative;
 			text-shadow: 
@@ -17,6 +40,9 @@
 				#c5bfb7 3px 3px;
 			top: -2px;
 			left: -2px;
+		}
+		span:target {
+				display: none;
 		}
 	}
 
