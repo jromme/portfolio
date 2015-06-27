@@ -46,18 +46,20 @@ section {
 
 	.infoCenter {
 		height: 100%;
+		width: 20%;
 		align-items: flex-end; 
 		display: flex; 
 		justify-content: center; 
+		img {
+			position: relative;
+			margin-top: 5%;
+			width: 70%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
-	img {
-		margin-top: 5%;
-		width: 10vw;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	h2{
 		font-family: aleoLight;
 		font-size: $base-font-size *2;
