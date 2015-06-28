@@ -1,3 +1,5 @@
+
+
 .hobbies {
 	height: 100%;
 	
@@ -11,37 +13,119 @@
 		font-weight: 400;
 	}
 
+	.left {
+		span:nth-child(1) p, span:nth-child(5) p{
+			font-size: $base-font-size * 2;
+		}
+		span:nth-child(3) p, span:nth-child(4) p{
+			font-size: $base-font-size * 1.4;
+		}
+	}
+
+	.right {
+		span:nth-child(3) p, span:nth-child(4) p{
+			font-size: $base-font-size * 2;
+		}
+		span:nth-child(1) p, span:nth-child(5) p{
+			font-size: $base-font-size * 1.4;
+		}
+	}
+		
+
 	span{
 		position: absolute;
-		//volleyball
+		opacity: 0;
+
+		&:nth-child(1){
+			top: 18%;
+			right: 15%;
+		}
+
+		&:nth-child(2){
+			top: 30%;
+			left: 15%; 
+		}
+
 		&:nth-child(3){
-			top: 25vh;
-			right: 15vw;
+			bottom: 27%;
+			right: 15%;
 		}
-		//got
+
 		&:nth-child(4){
-			top: 30vh;
-			left: 15vw; 
+			top: 38%;
+			right: 25%;
 		}
-		//gameing with friends
+
 		&:nth-child(5){
-			bottom: 15vh;
-			left: 20vw;
+			bottom: 15%;
+			left: 20%;
 		}
-		//grilling
+
 		&:nth-child(6){
-			top: 38vh;
-			right: 30vw;
+			top: 50%;
+			left: 35%;
 		}
-		//creating AWESOME SHIT
 		&:nth-child(7){
-			bottom: 17vh;
-			right: 15vw;
+			top: 10%;
+			left: 10%;
 		}
-		//whisky
-		&:nth-child(8){
-			top: 45vh;
-			left: 25vw;
+	}
+
+
+	.design p{
+		color: #4A2A2D;
+	}
+	.food p{
+		color: #E2A378;
+	}
+	.music p{
+		color: #6EA087;
+	}
+	.spare p{
+		color: #D1C9A4;
+	}
+}
+
+@keyframes hobbies-animation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#hobbies.active {
+
+	.hobbies {
+		span {
+			animation: hobbies-animation .4s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in-out;
+			// &:nth-child(1){
+			// 	animation-delay: .1s;
+			// }
+			// &:nth-child(2){
+			// 	animation-delay: .15s;
+			// }
+			// &:nth-child(3){
+			// 	animation-delay: .2s;
+			// }
+			// &:nth-child(4){
+			// 	animation-delay: .25s;
+			// }
+			// &:nth-child(5){
+			// 	animation-delay: .3s;
+			// }
+			// &:nth-child(6){
+			// 	animation-delay: .35s;
+			// }
+		}
+		@for $i from 1 through 10 {
+		  span:nth-child(#{$i}) {
+		    animation-delay:(#{$i*0.05s}); 
+		  }
 		}
 	}
 }
+
