@@ -24,13 +24,15 @@ $(document).ready(function() {
   //snapp
   $(document).scrollsnap({
       snaps: '.snap',
-      proximity: 400
+      proximity: 400,
+      latency: 50
   });
 
   $(document).scrollsnap({
       direction: 'x',
       snaps: 'section',
-      proximity: 1000
+      proximity: 1000,
+      latency: 50
   });
 
 });
