@@ -1,0 +1,14 @@
+#posts {
+
+  .panels {
+    float: right;
+    position: absolute;
+    overflow: scroll;
+    width: 75%;
+    height: 100%;
+    display: inline-block;
+  }
+  #menu {  
+    float: left;
+  }
+}

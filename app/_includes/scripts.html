@@ -8,33 +8,3 @@
 <script src="./js/typed.js"></script>
 <script src="./js/jrom.js"></script>
 <!-- endbuild -->
-<script type="text/javascript">
-
-$(document).ready(function() {
-
-
-  $('#posts .panels').panelSnap();
-
-  $('#home .panels').panelSnap();
-
-  $('#works .panels').panelSnap({
-          $menu: $('#works #menu .menu-works')
-        });
-
-  //snapp
-  $(document).scrollsnap({
-      snaps: '.snap',
-      proximity: 400,
-      latency: 50
-  });
-
-  $(document).scrollsnap({
-      direction: 'x',
-      snaps: 'section',
-      proximity: 1000,
-      latency: 50
-  });
-
-});
-
-</script>
