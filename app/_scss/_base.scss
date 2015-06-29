@@ -9,6 +9,7 @@ dl, dd, ol, ul, figure {
 }
 
 $background-color: #f1eae0;
+$darken: 5%;
 
 * {
     box-sizing: border-box;
@@ -77,6 +78,39 @@ p {
     font-family: "brandon-grotesque",sans-serif;
     font-style: normal;
     font-weight: 400;
+}
+
+a {
+    font-family: "adelle";
+    font-weight: 400;
+}
+
+.hover {
+  position: relative; 
+  transition-property: transform, text-shadow;
+  transition-duration: .2s;
+  transition-timing-function: linear;       
+  text-decoration: none;
+  font-size: $base-font-size * 2;
+  color: white;
+  &:hover {
+  text-shadow: 
+    #464441 1px 1px,
+    #464441 2px 2px,
+    #464441 3px 3px,
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.25),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.15),
+    0 10px 10px rgba(0,0,0,.1),
+    0 20px 20px rgba(0,0,0,.1);
+  transform: translate3d(-3px, -3px, 0);
+  text-decoration: none;
+  color: #f1eae0;
+  }
+  &:visited {
+    color: white;
+  }
 }
 
 /**

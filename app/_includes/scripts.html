@@ -17,7 +17,9 @@ $(document).ready(function() {
 
   $('#home .panels').panelSnap();
 
-  $('#works .panels').panelSnap();
+  $('#works .panels').panelSnap({
+          $menu: $('#works #menu .menu-works')
+        });
 
   //snapp
   $(document).scrollsnap({

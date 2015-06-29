@@ -1,0 +1,44 @@
+#works {
+
+  .panels {
+    float: left;
+    position: absolute;
+    overflow: scroll;
+    width: 75%;
+    height: 100%;
+    display: inline-block;
+  }
+  #menu {  
+    width: 25%;
+    height: 100%;
+    float: right;
+    background-color: darken($background-color, $darken);
+    .header{
+      height: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-family: brandon-grotesque;
+        font-weight: 100;
+        text-align: center;
+      }
+    }
+  }
+  .menu-works {
+    li {
+      position: relative;
+      padding: 1vh 2.5%;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+          color: white;
+      }
+      &:visited {
+        color: white;
+      }
+    }
+  }
+}

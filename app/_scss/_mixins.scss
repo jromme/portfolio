@@ -19,10 +19,6 @@ $h1-font-sizes: (
   1024px: 36px
 );
 
-h1 {
-  @include font-size($h1-font-sizes);
-}
-
 $p-font-sizes: (
   null  : 15px,
   480px : 16px,
@@ -30,6 +26,21 @@ $p-font-sizes: (
   1024px: 19px
 );
 
+$a-font-sizes: (
+  null  : 20px,
+  480px : 23px,
+  640px : 26px,
+  1024px: 28px
+);
+
+h1 {
+  @include font-size($h1-font-sizes);
+}
+
 p {
   @include font-size($p-font-sizes);
+}
+
+a {
+  @include font-size($a-font-sizes);
 }

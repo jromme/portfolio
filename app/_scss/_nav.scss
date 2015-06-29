@@ -8,6 +8,7 @@ nav {
   display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: darken($background-color, $darken);
 
 	ul {
 		margin: 0;
@@ -26,7 +27,6 @@ nav {
 		a {
 				// position: absolute;
 				position: relative;	
-				font-family: aleoRegular;
 				transition-property: transform, text-shadow;
 				transition-duration: .2s;
 				transition-timing-function: linear;				
