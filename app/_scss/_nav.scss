@@ -1,3 +1,33 @@
+ul {
+	bottom: 60px;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	top: 60px;
+	width: 38px;
+	z-index: 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+ul.navLeft {
+	left: 1%;
+	a {
+		display: inline-block;
+  	vertical-align: middle;
+	}
+}
+
+ul.navRight {
+	right: 1%;
+	a {
+		display: inline-block;
+  	vertical-align: middle;
+	}
+}
+
 nav {
 	position: fixed;
 	bottom: 0px;
@@ -8,7 +38,7 @@ nav {
   display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: darken($background-color, $darken);
+	background-color: $darken;
 
 	ul {
 		margin: 0;

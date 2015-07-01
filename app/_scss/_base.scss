@@ -8,8 +8,11 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-$background-color: #f1eae0;
-$darken: 5%;
+$background-color: #fff8ed;
+$darken: #f1eae0;
+
+$font-slab: "adelle";
+$base-font: "brandon-grotesque",sans-serif;
 
 * {
     box-sizing: border-box;
@@ -22,7 +25,7 @@ $darken: 5%;
 body {
     height: 100vh;
     width: 300vw;
-    font-family: $base-font-family;
+    font-family: $base-font;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
@@ -55,25 +58,22 @@ h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 3;
 }
 
 /**
  * Images
  */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
+
 
 p {
-    font-family: "brandon-grotesque",sans-serif;
+    font-family: $base-font;
     font-style: normal;
     font-weight: 400;
 }
 
 a {
-    font-family: "adelle";
+    font-family: $font-slab;
     font-weight: 400;
 }
 
@@ -83,7 +83,7 @@ a {
   transition-duration: .2s;
   transition-timing-function: linear;       
   text-decoration: none;
-  font-size: $base-font-size * 2;
+  font-size: $base-font-size * 1.5;
   color: white;
   &:hover {
   text-shadow: 

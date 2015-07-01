@@ -10,5 +10,15 @@
   }
   #menu {  
     float: left;
+    .header {
+      padding-left: 15%;
+      justify-content: flex-start;
+    }
+  }
+  .menu {
+    padding-left: 14%;
+    li {
+      justify-content: flex-start;
+    }
   }
 }
