@@ -24,10 +24,6 @@
     animation: blink 0.7s infinite;
 	}
 
-	img {
-		bottom: 10%;
-	}
-
 	.inner h1 {
 		cursor: pointer;
 		transition: all .2s ease-in-out;
@@ -46,6 +42,13 @@
 				display: none;
 		}
 	}
+
+  .infoCenter {
+    align-items: flex-end;
+    img {
+      bottom: 5%;
+    }
+  }
 
 	.spanWrapper {
 		width: 100%;

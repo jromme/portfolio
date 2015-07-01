@@ -47,12 +47,11 @@ section {
 	.infoCenter {
 		height: 100%;
 		width: 20%;
-		align-items: flex-end; 
 		display: flex; 
+    align-items: center; 
 		justify-content: center; 
 		img {
 			position: relative;
-			margin-top: 5%;
 			width: 70%;
 			display: block;
 			margin-left: auto;

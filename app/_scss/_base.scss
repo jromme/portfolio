@@ -32,11 +32,6 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
-    background-image: url("../img/test.png");
-    background-repeat: no-repeat;
-    background-position: 50% 40%;
-    background-attachment: fixed;
-    background-size: 10vw;
     overflow-y: hidden;
     font-size: 0;
     user-select: none;
@@ -49,6 +44,13 @@ body {
   display: inline-block;
   float: left;
   overflow: hidden;
+}
+
+.view#home {
+    background-image: url("../img/test1.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10vw;
 }
 
 /**
