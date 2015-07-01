@@ -2,9 +2,8 @@
 #menu {  
   width: 25%;
   height: 100%;
-  background-color: $darken;
   .header{
-    height: 30%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,17 +14,19 @@
     }
   }
   .menu {
-    li {
-      position: relative;
-      padding: 1vh;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      a {
+    ul {
+      margin-bottom: 0;
+      li {
+        position: relative;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        a {
+            color: white;
+        }
+        &:visited {
           color: white;
-      }
-      &:visited {
-        color: white;
+        }
       }
     }
   }

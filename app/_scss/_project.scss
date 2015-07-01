@@ -1,6 +1,5 @@
 .project {
   height: 100%;
-  background-color: lighten($background-color, 5%);
 
   #participation {
     img {
@@ -12,15 +11,17 @@
     position: relative;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    img {
-      width: 20%;
-    }
-    p {
-      position: absolute;
-      bottom: 0;
-      left: 1vw;
+    background-image: url("../img/sentio_logo.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10vw;
+    text-align: center;
+    .project-info {    
+      p {
+
+      }
     }
   }
 }
