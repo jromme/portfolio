@@ -1,27 +1,67 @@
 .project {
   height: 100%;
-
-  #participation {
-    img {
-      background-size: cover;
-    }
-  }
-
-  .project-content {
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-image: url("../img/sentio_logo.png");
+  .background-img {
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    top: -5%;
+    left: -5%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 10vw;
-    text-align: center;
-    .project-info {    
-      p {
-
+    z-index: -1;
+  }
+  .project-content {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+    video {
+      border-radius: 5px;
+      margin: auto;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+      width: 30% !important;
+      height: auto !important;
+    }
+    .project-info { 
+      position: absolute;
+      width: 100%;
+      bottom: 5%;
+      left: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;   
+      display: inline-block;
+      i {
+        border-color: 1px solid black;
+        border-radius: 50%;
       }
     }
   }
 }
+
+#sentio .background-img {
+  background-image: url("../img/sentio_bg.png");
+  background-size: cover;
+}
+
+#jokers .background-img {
+  background-image: url("../img/jokers_bg.png");
+  background-size: cover;
+}
+
+#participation .background-img {
+  background-image: url("../img/participation_bg.png");
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
