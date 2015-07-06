@@ -1,5 +1,6 @@
 #home, #posts, #works { 
 	.nav {
+		width: 100%;
 		ul {
 			bottom: 60px;
 			display: inline-block;
@@ -28,4 +29,22 @@
 			}
 		}
 	}
+}
+
+.menu a.active,
+.menu a:active,
+.menu a:hover {
+  text-shadow: 
+    #4D7671 1px 1px,
+    #4D7671 2px 2px,
+    #4D7671 3px 3px,
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.25),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.15),
+    0 10px 10px rgba(0,0,0,.1),
+    0 20px 20px rgba(0,0,0,.1);
+  transform: translate3d(-3px, -3px, 0) !important;
+  text-decoration: none;
+  color: #f1eae0;
 }
