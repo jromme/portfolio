@@ -1,15 +1,5 @@
 @charset "utf-8";
 
-
-
-// Our variables
-@font-face { font-family: perfograma; src: url('../fonts/Perfograma.otf'); }
-@font-face { font-family: manifesto; src: url('../fonts/MANIFESTO.ttf'); }
-@font-face { font-family: aleoLight; src: url('../fonts/Aleo-Light.otf'); }
-@font-face { font-family: aleoRegular; src: url('../fonts/Aleo-Regular.otf'); }
-@font-face { font-family: ralewayThin; src: url('../fonts/raleway_thin-webfont.ttf'); }
-
-
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -54,12 +44,12 @@ $on-laptop:        800px;
         "welcome",
         "hobbies",
         "section",
-        "header",
         "intro",
         "nav",
         "works",
         "posts",
         "mixins",
         "menu",
-        "backgrounds"
+        "backgrounds",
+        "article"
 ;

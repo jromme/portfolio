@@ -1,7 +1,8 @@
 ---
-layout: post
-title:  "Yo Jekyll!"
-categories: jekyllupdate
+layout: default
+title:  "My second article"
+hashtag: "second"
+author: "Jerome"
 ---
 
 # 'Allo, 'Allo!

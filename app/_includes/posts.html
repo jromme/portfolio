@@ -4,15 +4,16 @@
 </ul>
 </div>
 
-<div class="panels">
-  <section id="sentio" data-panel="sentio"><p>hallo1</p></section>
-  <section id="jokers" data-panel="jokers"><p>hallo2</p></section>
-  <section id="participatie" data-panel="participation"><p>hallo3</p></section>
-</div>
-
 <div id="menu">
   <div class="header"><h1>Blog</h1></div>
   <div class="menu"> 
+    {% for post in site.posts %}
+      <ul>
+        <li>
+          <a href data-panel="{{ post.hashtag }}" class="hover">{{ post.title }}</a>
+        </li>
+      </ul>
+    {% endfor %}
     <ul>
       <li>
         <a href data-panel="sentio" class="hover">Sentio</a>
@@ -30,3 +31,12 @@
     </ul>        
   </div>
 </div>
+
+  <div class="panels">
+    {% for post in site.posts %}
+      <section id="{{ post.hashtag }}" data-panel="{{ post.hashtag }}">{% include article.html %}</section>
+    {% endfor%}
+    <section id="sentio" data-panel="sentio"><p>hallo1</p></section>
+    <section id="jokers" data-panel="jokers"><p>hallo2</p></section>
+    <section id="participatie" data-panel="participation"><p>hallo3</p></section>
+  </div>
