@@ -46,11 +46,17 @@ body {
 }
 
 .view#home {
-    background-image: url("../img/test1.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 10vw;
+  background-image: url("../img/test1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 10vw;
+  .background-img {
+    background-image: url("../img/home_bg.png");
+    background-size: cover;
+  }
 }
+
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm

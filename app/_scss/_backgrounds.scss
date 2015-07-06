@@ -1,0 +1,31 @@
+.background-img {
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    top: -5%;
+    left: -5%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10vw;
+    z-index: -1;
+  }
+
+#sentio .background-img {
+  background-image: url("../img/sentio_bg.png");
+  background-size: cover;
+}
+
+#jokers .background-img {
+  background-image: url("../img/jokers_bg.png");
+  background-size: cover;
+}
+
+#participation .background-img {
+  background-image: url("../img/participation_bg.png");
+  background-size: cover;
+}
+
+#home .background-img {
+  background-image: url("../img/home_bg.png");
+  background-size: cover;
+} 
