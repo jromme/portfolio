@@ -18,7 +18,7 @@ $(document).ready(function() {
       direction: 'x',
       snaps: '.snap',
       proximity: 1000,
-      latency: 50
+      latency: 100
   });
 
     //typed
