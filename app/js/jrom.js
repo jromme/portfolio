@@ -43,7 +43,7 @@ $(document).ready(function() {
   $('.intro .right .wrap:nth-child(1) h1').on('click', function(){
     $(".intro .right .wrap:nth-child(1) p").addClass('cursor'),
     $(".intro .right .wrap:nth-child(1) p").typed({
-      strings: ["what I do? Creating things is like a drug to me. It's even worse when people like it."],
+      strings: ["what I do? Making things is like a drug to me. It's even worse when people like it."],
       typeSpeed: 0,
       showCursor: true
     });

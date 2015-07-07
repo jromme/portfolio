@@ -29,7 +29,7 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    @extend %background-color;
     -webkit-text-size-adjust: 100%;
     overflow-y: hidden;
     font-size: 0;
@@ -43,17 +43,6 @@ body {
   display: inline-block;
   float: left;
   overflow: hidden;
-}
-
-.view#home {
-  background-image: url("../img/test1.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 10vw;
-  .background-img {
-    background-image: url("../img/home_bg.png");
-    background-size: cover;
-  }
 }
 
 /**

@@ -1,8 +1,9 @@
 ---
 layout: default
-title:  "My second article"
-hashtag: "second"
+title:  "Battle of Maestricht"
+hashtag: "battle"
 author: "Jerome"
+header-image: /img/battleofmaestricht_bg.jpg
 ---
 
 # 'Allo, 'Allo!

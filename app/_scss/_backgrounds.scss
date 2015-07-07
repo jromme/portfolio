@@ -25,7 +25,9 @@
   background-size: cover;
 }
 
-#home .background-img {
-  background-image: url("../img/home_bg.png");
-  background-size: cover;
-} 
+#home {
+  background-image: url("../img/test1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 10vw;
+}
