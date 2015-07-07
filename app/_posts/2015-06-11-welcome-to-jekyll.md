@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "TYPO BERLIN"
+title:  "TYPO Berlin"
 date:   2015-06-11 00:11:17
 hashtag: "typo"
 header-image: /img/jokers_bg.png
