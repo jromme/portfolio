@@ -2,20 +2,23 @@
 	.nav {
 		width: 100%;
 		ul {
-			bottom: 60px;
+			top: 50%;
+      transform: translateY(-50%);
 			display: inline-block;
 			position: absolute;
 			text-align: center;
-			top: 60px;
-			width: 38px;
 			z-index: 5;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 0;
+			margin: 0;
+      list-style: none;
+      li {
+        display: block;
+      }
 		}
 		ul.navLeft {
 			left: 1%;
+      li {
+        display: block;
+      }
 			a {
 				display: inline-block;
 		  	vertical-align: middle;
@@ -23,13 +26,18 @@
 		}
 		ul.navRight {
 			right: 1%;
-			a {
-				display: inline-block;
-		  	vertical-align: middle;
-			}
+		  li {
+        display: block;
+        &:nth-child(4) { transform: translateY(0.13em) }
+        &:nth-child(5) { transform: translateY(0.13em) }
+      }
 		}
 	}
 }
+
+#home ul.navLeft li:nth-child(2),
+#home ul.navRight li:nth-child(4),
+#home ul.navRight li:nth-child(5) { transform: translateY(0.13em) }
 
 .menu a.active,
 .menu a:active,
