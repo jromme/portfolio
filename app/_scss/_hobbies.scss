@@ -4,13 +4,14 @@
 	height: 100%;
 	
 	img {
-		bottom: 2%;
+		bottom: -3%;
 	}
 
 	p {
-		font-family: "adelle",serif;
+		font-family: "brandon-grotesque",serif;
 		font-style: normal;
 		font-weight: 400;
+		color: #E6C34F;
 	}
 
 	.left {
@@ -73,16 +74,16 @@
 
 
 	.design p{
-		color: #A0392B;
-	}
-	.food p{
 		color: #E6C34F;
 	}
+	.food p{
+		color: darken(#E6C34F, 10%);
+	}
 	.music p{
-		color: #B57C53;
+		color: darken(#E6C34F, 20%);
 	}
 	.spare p{
-		color: #D86C62;
+		color: darken(#E6C34F, 30%);
 	}
 }
 

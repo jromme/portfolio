@@ -1,0 +1,16 @@
+article {
+  max-width: 600px; 
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  .header-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

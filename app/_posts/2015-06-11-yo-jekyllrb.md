@@ -1,7 +1,9 @@
 ---
-layout: post
-title:  "Yo Jekyll!"
-categories: jekyllupdate
+layout: default
+title:  "Battle of Maestricht"
+hashtag: "battle"
+author: "Jerome"
+header-image: /img/battleofmaestricht_bg.jpg
 ---
 
 # 'Allo, 'Allo!

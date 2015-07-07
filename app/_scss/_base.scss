@@ -10,7 +10,7 @@ dl, dd, ol, ul, figure {
 
 $darken: #f1eae0;
 
-$font-slab: "adelle";
+$font-slab: "brandon-grotesque";
 $base-font: "brandon-grotesque",sans-serif;
 
 * {
@@ -29,7 +29,7 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    @extend %background-color;
     -webkit-text-size-adjust: 100%;
     overflow-y: hidden;
     font-size: 0;
@@ -44,19 +44,6 @@ body {
   float: left;
   overflow: hidden;
 }
-
-.view#home {
-  background-image: url("../img/test1.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 10vw;
-  .background-img {
-    background-image: url("../img/home_bg.png");
-    background-size: cover;
-  }
-}
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -75,8 +62,9 @@ ul, ol, dl, figure,
 
 p {
     font-family: $base-font;
+    font-size: $base-font-size * 1.2;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 a {
@@ -157,15 +145,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $background-color;
+    color: white;
     text-decoration: none;
 
     &:visited {
-        color: $background-color;
+        color: white;
     }
 
     &:hover {
-        color: $background-color;
+        color: white;
         text-decoration: none;
     }
 }
