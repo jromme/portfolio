@@ -13,7 +13,6 @@ $(document).ready(function() {
     $menu: $('#works #menu .menu')
   });
 
-  //snapp
   $(document).scrollsnap({
       direction: 'x',
       snaps: '.snap',
@@ -21,7 +20,6 @@ $(document).ready(function() {
       latency: 100
   });
 
-    //typed
   $('.intro .left .wrap:nth-child(1) h1').on('click', function(){
     $(".intro .left .wrap:nth-child(1) p").addClass('cursor'),
     $(".intro .left .wrap:nth-child(1) p").typed({
