@@ -1,8 +1,9 @@
 article {
   max-width: 600px; 
   height: 100%;
-  margin: 0 auto;
+  margin: 5% auto;
   overflow-y: scroll;
+  position: relative;
   .header-image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,5 +13,13 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  p {
+    padding: 1%;
+    text-align: justify;
   }
 }
