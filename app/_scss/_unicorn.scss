@@ -24,6 +24,11 @@
 
 .unicorn {
 	height: 100%;
+	p {
+		font-size: $base-font-size * 1.4;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
 	span {
 		display: block;
 		width: 100%;
@@ -37,10 +42,6 @@
 		img {
 			bottom: 12%;
 		}
-	}
-	p {
-		font-weight: 400;
-		margin-bottom: 0;
 	}
 }
 
