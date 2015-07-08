@@ -52,7 +52,7 @@ $(document).ready(function() {
   $('.intro .right .wrap:nth-child(2) h1').on('click', function(){
     $(".intro .right .wrap:nth-child(2) p").addClass('cursor'),
     $(".intro .right .wrap:nth-child(2) p").typed({
-      strings: ["am studying Communication and Design at Zuyd Hogeschool in Maastricht. Looking for a half year internship, starting from September. So hurry, winter is coming..."],
+      strings: ["am studying Communication and Design at Zuyd Hogeschool in Maastricht. At the moment I am looking for a half year internship, starting from September. So hurry, winter is coming..."],
       typeSpeed: 0,
       showCursor: true
     });
