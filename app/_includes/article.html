@@ -2,5 +2,6 @@
   <header {% if post.header-image %} class="header-image" style="background-image: url({{ post.header-image }});" {% endif %}>
     <h1>{{ post.title }}</h1>
   </header>
+  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   <p>{{ post.content }}</p>
 </article>>

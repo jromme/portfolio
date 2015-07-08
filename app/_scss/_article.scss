@@ -1,5 +1,6 @@
 article {
-  max-width: 600px; 
+  width: 50%;
+  max-width: 900px; 
   height: 100%;
   margin: 5% auto;
   overflow-y: scroll;
@@ -13,13 +14,17 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
   }
   img {
     width: 100%;
-    margin-bottom: 5%;
+    padding-bottom: 20%;
   }
   p {
-    padding: 1%;
+    margin: 1%;
     text-align: justify;
+  }
+  a {
+    font-size: $base-font-size *1.2;
   }
 }

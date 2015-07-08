@@ -25,7 +25,7 @@ $(document).ready(function() {
   $('.intro .left .wrap:nth-child(1) h1').on('click', function(){
     $(".intro .left .wrap:nth-child(1) p").addClass('cursor'),
     $(".intro .left .wrap:nth-child(1) p").typed({
-      strings: ["is Jerome Braeken, born in 1991. What will happen next when I add a line."],
+      strings: ["is Jerome Braeken, born in 1991. My first stuffed animal whas a dog named \"Vlekkie\"."],
       typeSpeed: 0,
       showCursor: false
     });
@@ -34,7 +34,7 @@ $(document).ready(function() {
   $('.intro .left .wrap:nth-child(2) h1').on('click',function(){
     $(".intro .left .wrap:nth-child(2) p").addClass('cursor'),
     $(".intro .left .wrap:nth-child(2) p").typed({
-      strings: ["raised in Maastricht. A city close to both Belgium and Germany."],
+      strings: ["raised in Maastricht(NL). Close to both Belgium and Germany. We are a chauvinistic kind of people. Proud and strong."],
       typeSpeed: 0,
       showCursor: false
     });
@@ -52,7 +52,7 @@ $(document).ready(function() {
   $('.intro .right .wrap:nth-child(2) h1').on('click', function(){
     $(".intro .right .wrap:nth-child(2) p").addClass('cursor'),
     $(".intro .right .wrap:nth-child(2) p").typed({
-      strings: ["am studying CMD at Zuyd Hogeschool in Maastricht. Looking for a half year internship, starting from September."],
+      strings: ["am studying Communication and Design at Zuyd Hogeschool in Maastricht. Looking for a half year internship, starting from September. So hurry, winter is coming..."],
       typeSpeed: 0,
       showCursor: true
     });
@@ -73,6 +73,11 @@ $(document).ready(function() {
   $('.right .wrap:nth-child(2) h1').click(function(){
     $('.right .wrap:nth-child(2) h1 span.typed-cursor').css('display', 'none')
   });
+
+  $(document.links).filter(function() {
+      return this.hostname != window.location.hostname;
+  }).attr('target', '_blank');
+
 });
 
 

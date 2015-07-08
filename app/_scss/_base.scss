@@ -1,4 +1,4 @@
-/**
+t/**
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -163,13 +163,11 @@ a {
 /**
  * Blockquotes
  */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+blockquote, article blockquote p {
+
+    font-size: $base-font-size * 2;
+    font-weight: 100;
+    text-align: center;
 
     > :last-child {
         margin-bottom: 0;
