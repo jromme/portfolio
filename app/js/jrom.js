@@ -2,6 +2,8 @@
 
 $(document).ready(function() {
 
+   $(window).onload = location.href="#home";
+
   //panelsnap
   $('#posts .panels').panelSnap({
     $menu: $('#posts #menu .menu')
