@@ -17,14 +17,16 @@
     z-index: 2;
     display: flex;
     align-items: flex-end;
-    bottom: 5%;
     .project-info { 
+      position: relative;
+      color: #0E3156;
       width: 100%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       text-align: center;   
       display: inline-block;
+      bottom: 5%;
       a {
         width: 50px;
         height: 50px;
@@ -38,6 +40,42 @@
         }
       }
     }
+  }
+}
+
+@keyframes workSlideInL {
+  0% {
+    opacity: 0;
+    margin-left: -5%;
+  }
+
+    100% {
+      opacity: 1;
+      margin-left: 30%;
+  }
+}
+
+@keyframes workSlideInR {
+  from {
+    opacity: 0;
+    margin-right: -5%;
+  }
+
+    to {
+      opacity: 1;
+      margin-right: 30%;
+  }
+}
+
+@keyframes workSlideInTop {
+  from {
+    opacity: 0;
+    margin-top: -5%;
+  }
+
+    to {
+      opacity: 1;
+      margin-top: 30%;
   }
 }
 
