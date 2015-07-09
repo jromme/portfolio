@@ -3,7 +3,7 @@ layout: default
 title:  "Battle of Maestricht"
 hashtag: "battle"
 author: "Jerome"
-header-image: /img/battleofmaestricht_bg.jpg
+header-image: ./img/battleofmaestricht_bg.jpg
 ---
 
 You all know the feeling. Saying no to people with the arguments: “I’m too busy right now”, “I’m not prepared for that” and so on. I am no exception to this rule. My sister Charlotte asked me to join her in the obstacle run called: The Battle of Maestricht. At first I declined. The tickets were too expensive and I was not prepared. One argument was shattered when Wim (boyfriend of Charlotte) managed to get a free ticket. The other argument I refuted myself. After two months without sporting, I was ready for some physical overdo. A slim and muscled body -ahum- transferred into a body with rich lovehandles and a talking belly button. My Nephews from Friesland were the ones that eventually persuaded me to sign in. For they live in the North and I live in the South of The Netherlands, this was the perfect opportunity to hang out on a different activity, other than boring christmas dinners. Now, the decision was final.
