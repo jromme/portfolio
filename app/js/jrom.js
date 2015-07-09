@@ -3,9 +3,14 @@
 $(document).ready(function() {
 
   var clientHeight = $( window ).height();
+  var clientWidth = $( window ).width();
   $('body').css('height', clientHeight);
   $('section').css('height', clientHeight);
+  $('section').css('width', clientWidth);
   $('.view').css('height', clientHeight);
+  // $('.view').css('width', clientWidth);
+  // $('.panels').css('height', clientHeight);
+  // $('.panels').css('width', clientWidth);
 
   $(window).onload = location.href="#home";
 

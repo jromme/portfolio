@@ -35,6 +35,10 @@
         display: inline-block;
         transition: 0.2s;
         border: 1px solid white;
+        &:hover {
+          color: #0E3156 !important;
+          transition: .3s;
+        }
         i {
           line-height: 1.8;
         }
