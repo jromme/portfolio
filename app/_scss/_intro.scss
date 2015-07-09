@@ -46,7 +46,7 @@
   .infoCenter {
     align-items: flex-end;
     img {
-      bottom: 5%;
+      bottom: -35%;
     }
   }
 
@@ -71,6 +71,26 @@
     margin-top: 1%;
 		font-family: "brandon-grotesque",sans-serif;
 		text-align: left;
-    color: #E6C34F;
+    color: #F2F2F2;
 	}
+}
+
+#intro.active {
+
+  .intro {
+    img {
+      animation: katheder-animation .4s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+
+@keyframes katheder-animation {
+  from {
+    bottom: -35%;
+  }
+  to {
+    bottom: 2%;
+  }
 }
