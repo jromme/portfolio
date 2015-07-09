@@ -2,6 +2,11 @@
 
 $(document).ready(function() {
 
+  var clientHeight = $( window ).height();
+  $('body').css('height', clientHeight);
+  $('section').css('height', clientHeight);
+  $('.view').css('height', clientHeight);
+
   $(window).onload = location.href="#home";
 
   //smooth h-scroll
