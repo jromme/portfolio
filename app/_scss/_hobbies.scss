@@ -11,7 +11,6 @@
 		font-family: "brandon-grotesque",serif;
 		font-style: normal;
 		font-weight: 400;
-		color: #E6C34F;
 	}
 
 	.left {
@@ -40,50 +39,43 @@
 		&:nth-child(1){
 			top: 18%;
 			right: 15%;
+			color: darken(#D1D6C1, 0%);
 		}
 
 		&:nth-child(2){
 			top: 30%;
 			left: 15%; 
+			color: #B2BFB6;
 		}
 
 		&:nth-child(3){
 			bottom: 27%;
 			right: 15%;
+			color: #8EA4AA;
 		}
 
 		&:nth-child(4){
 			top: 38%;
 			right: 25%;
+			color: #A5B5B1;
 		}
 
 		&:nth-child(5){
 			bottom: 15%;
 			left: 20%;
+			color: #7893A3;
 		}
 
 		&:nth-child(6){
 			top: 50%;
 			left: 35%;
+			color: darken(#97ABAC, 10%);
 		}
 		&:nth-child(7){
 			top: 10%;
 			left: 10%;
+			color: #FEFAD0;
 		}
-	}
-
-
-	.design p{
-		color: #E6C34F;
-	}
-	.food p{
-		color: darken(#E6C34F, 10%);
-	}
-	.music p{
-		color: darken(#E6C34F, 20%);
-	}
-	.spare p{
-		color: darken(#E6C34F, 30%);
 	}
 }
 
