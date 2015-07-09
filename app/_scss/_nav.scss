@@ -15,7 +15,7 @@
       }
 		}
 		ul.navLeft {
-			left: 1%;
+			left: 2%;
       li {
         display: block;
       }
@@ -25,11 +25,15 @@
 			}
 		}
 		ul.navRight {
-			right: 1%;
+			right: 2%;
 		  li {
         display: block;
         &:nth-child(4) { transform: translateY(0.13em) }
         &:nth-child(5) { transform: translateY(0.13em) }
+      }
+      a {
+        display: inline-block;
+        vertical-align: middle;
       }
 		}
 	}
