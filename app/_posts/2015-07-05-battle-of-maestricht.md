@@ -25,4 +25,4 @@ I could see people slipping down after a failed attempt to reach the top. Others
 
 > Happy days  
 
-![Alt text](/img/victors.jpg "Victors!")
+![Alt text](./img/victors.jpg "Victors!")
