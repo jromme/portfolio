@@ -2,15 +2,19 @@
 
 $(document).ready(function() {
 
-  var clientHeight = $( window ).height();
-  var clientWidth = $( window ).width();
-  $('body').css('height', clientHeight);
-  $('section').css('height', clientHeight);
-  $('section').css('width', clientWidth);
-  $('.view').css('height', clientHeight);
+  // var clientHeight = $( window ).height();
+  // var clientWidth = $( window ).width();
+  // $('body').css('height', clientHeight);
+  // $('section').css('height', clientHeight);
+  // $('section').css('width', clientWidth);
+  // $('.view').css('height', clientHeight);
   // $('.view').css('width', clientWidth);
   // $('.panels').css('height', clientHeight);
   // $('.panels').css('width', clientWidth);
+
+  if($(window).width() < 600){
+    window.location.href = "http://jerome.design/404"
+  }
 
   $(window).onload = location.href="#home";
 

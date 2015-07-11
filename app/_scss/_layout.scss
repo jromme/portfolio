@@ -11,15 +11,50 @@
 
 @include media-query-portrait($on-palm) {
 
-    body {
-      display: none;
+    div#portrait {
+      visibility: visible;    
     }
 }
 
 @include media-query-portrait($on-laptop) {
 
-    body {
-      display: none;
+    div#portrait {
+      visibility: visible;
+    }
+}
+
+#portrait {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    .wrapper {
+      width: 60%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        p {
+            color: white;
+            font-size: $base-font-size * 3;
+            &.horizontal {
+                display: table;
+            }
+            &.vertical {
+              -ms-writing-mode: tb-lr;
+              -webkit-writing-mode: vertical-lr;
+              -moz-writing-mode: vertical-lr;
+              -ms-writing-mode: vertical-lr;
+              writing-mode: vertical-lr;
+              font-size: $base-font-size * 2;
+
+            }
+        }
     }
 }
 
