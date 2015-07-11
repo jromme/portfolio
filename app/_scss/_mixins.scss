@@ -13,24 +13,27 @@
 }
 
 $h1-font-sizes: (
-  null  : 28px,
-  480px : 31px,
-  640px : 33px,
-  1024px: 36px
+  null  : 27px,
+  $on-mobile: 30px,
+  $on-palm: 33px,
+  $on-laptop: 36px,
+  $on-desktop: 39px
 );
 
 $p-font-sizes: (
-  null  : 15px,
-  480px : 16px,
-  640px : 17px,
-  1024px: 19px
+  null  : 13px,
+  $on-mobile: 15px,
+  $on-palm: 17px,
+  $on-laptop: 19px,
+  $on-desktop: 21px
 );
 
 $a-font-sizes: (
-  null  : 20px,
-  480px : 23px,
-  640px : 26px,
-  1024px: 28px
+  null  : 19px,
+  $on-mobile: 22px,
+  $on-palm: 25px,
+  $on-laptop: 28px,
+  $on-desktop: 31px
 );
 
 h1 {

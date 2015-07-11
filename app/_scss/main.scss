@@ -16,12 +16,20 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$on-palm:          600px;
+$on-mobile:        600px;
+$on-palm:          640px;
 $on-laptop:        800px;
+$on-desktop:      1024px;
 
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (max-width: $device){
+        @content;
+    }
+}
+
+@mixin media-query-portrait($device) {
+    @media screen and (max-width: $device) and (orientation: portrait) {
         @content;
     }
 }
