@@ -2,31 +2,24 @@
 
 $(document).ready(function() {
 
+  var clientHeight = $( window ).height();
+  var clientWidth = $( window ).width();
+  $('body').css('height', clientHeight);
+  $('section').css('height', clientHeight);
+  $('section').css('width', clientWidth);
+  $('.view').css('height', clientHeight);
 
 
-  // $(window).bind( 'orientationchange', function(e){
-  //     var clientHeight = $( window ).height();
-  //     var clientWidth = $( window ).width();
-  //     $('body').css('height', clientHeight),
-  //     $('section').css('height', clientHeight),
-  //     $('section').css('width', clientWidth),
-  //     $('.view').css('height', clientHeight),
-  //     $('.view').css('width', clientWidth),
-  //     $('.panels').css('height', clientHeight),
-  //     $('.panels').css('width', clientWidth)
-  //   };
-  // });
-
-  $(window).addEventListener('orientationchange', function(){
-    var w = $(window).width(),
-        h = $(window).height(),
-        items = ['body', 'section', '.view', '.panels'];
-    for (i in items) {
-      $(i).css({'width' : w, 'height' : h});
-    }
+  $( window ).on('orientationchange', function( event ) {
+    window.setTimeout(function() {
+      var clientHeight = $( window ).height();
+      var clientWidth = $( window ).width();
+      $('body').css('height', clientHeight);
+      $('section').css('height', clientHeight);
+      $('section').css('width', clientWidth);
+      $('.view').css('height', clientHeight);
+    }, 200);
   });
-
-
 
   if($(window).width() < 600){
     window.location.href = "http://jerome.design/404"
