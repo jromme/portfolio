@@ -21,10 +21,6 @@ $(document).ready(function() {
     }, 200);
   });
 
-  if($(window).width() < 600){
-    window.location.href = "http://jerome.design/404"
-  }
-
   $(window).onload = location.href="#home";
 
   //smooth h-scroll
